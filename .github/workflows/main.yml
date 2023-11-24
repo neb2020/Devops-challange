@@ -1,0 +1,29 @@
+
+name: codepipeline
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout codepipeline
+        uses: actions/checkout@v2
+
+      - name: Install dependencies 
+        run: npm install 
+
+      - name: Lint 
+        run: npm run prettier 
+
+      - name: Test 
+        run: CI=true npm run test 
+
+      - name: Build 
+        run: npm run build 
+        
+       
