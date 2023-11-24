@@ -16,7 +16,7 @@ jobs:
 
       - name: Install dependencies #llfjfj
         run: |
-          cd devops-ci-challenge/codebase/rdicidr-0.1.0/package.json
+          cd Devops-challange\devops-ci-challenge\codebase\rdicidr-0.1.0\package.json
           npm install 
 
       - name: Lint 
