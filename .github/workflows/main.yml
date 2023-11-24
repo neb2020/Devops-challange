@@ -21,7 +21,7 @@ jobs:
           npm install 
 
       - name: Lint 
-        run: npm run prettier 
+        run: npm run prettier ##this is to test
 
       - name: Test 
         run: CI=true npm run test 
