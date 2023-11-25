@@ -14,7 +14,7 @@ jobs:
       - name: Checkout codepipeline
         uses: actions/checkout@v2
 
-      - name: Install dependencies #work
+      - name: Install dependencies ### work
         run: |
           cd Devops-challange\devops-ci-challenge\codebase\rdicidr-0.1.0\package.json
           npm install 
