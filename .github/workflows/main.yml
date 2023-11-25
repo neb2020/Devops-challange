@@ -23,7 +23,7 @@ jobs:
         run: npm run prettier ## boom
 
       - name: Test 
-        run: CI=true npm run test 
+        run: CI=true npm run test ## all we
 
       - name: Build 
         run: npm run build # this is a test run
